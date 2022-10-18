@@ -1,10 +1,30 @@
-html, body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
 
-h1{
-    color: blue;
+header{
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 30px;
+}
+
+.banner{
+    background-image: url(assets/hero.jpg);
+}
+
+.awards-container{
+    display: flex;
 }
