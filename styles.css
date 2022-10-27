@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color1: #F7B180;
+    --primary-color2: #18471B;
+    --secondary-color1: #FFFFFF;
+    --secondary-color2: #000000;
+    --blue: #3b07e9;
+}
+
 header{
     display: flex;
     background-color: blue;
