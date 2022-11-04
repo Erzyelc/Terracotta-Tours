@@ -3,13 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* colors updated-gurcan */
 :root{
-    --primary-color1: #F7B180;
-    --primary-color2: #18471B;
-    --secondary-color1: #FFFFFF;
-    --secondary-color2: #000000;
-    --blue: #3b07e9;
+    --background: #FDF7F0;
+    --background-footer: #FDDBCB;
+    --background-dark: #01435A;
+    --card: #FFFFFF;
+    --accent-green: #1EC28B;
+    --text-primary: #01435A;
+    --text-secondary: #4D7B8B;
+    --text-reversed: #FFFFFF;
+}
+/* gurcan */
+body, html{
+    font-family: 'Permanent', 'Marker';
+    height: 100%;
+    width: 100%;
 }
 
 header{
@@ -36,3 +45,26 @@ header img{
 .awards-container{
     display: flex;
 }
+
+.card-container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    border: 1px solid black;
+}
+
+.card img{
+    width: 100%;
+}
+
+footer{
+    margin-top: 200px;
+    background-color: var(--background-footer);
+  }
+
