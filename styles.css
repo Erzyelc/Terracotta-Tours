@@ -63,8 +63,24 @@ header img{
     width: 100%;
 }
 
+.footer-logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-logo img{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+
+}
 footer{
-    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     background-color: var(--background-footer);
   }
+
 
