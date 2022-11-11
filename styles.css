@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* colors updated-gurcan */
+:root{
+    --background: #FDF7F0;
+    --background-footer: #FDDBCB;
+    --background-dark: #01435A;
+    --card: #FFFFFF;
+    --accent-green: #1EC28B;
+    --text-primary: #01435A;
+    --text-secondary: #4D7B8B;
+    --text-reversed: #FFFFFF;
+}
+/* gurcan */
+body, html{
+    font-family: 'Permanent', 'Marker';
+    height: 100%;
+    width: 100%;
+}
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -149,6 +166,7 @@ main button {
 
 .awards-container{
     display: flex;
+
     justify-content: space-around;
     align-content: center;
 }
@@ -171,3 +189,43 @@ ul li {
     width: 700px;
     height: 300px;
 }
+=======
+}
+
+.card-container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    border: 1px solid black;
+}
+
+.card img{
+    width: 100%;
+}
+
+.footer-logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-logo img{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--background-footer);
+  }
+
