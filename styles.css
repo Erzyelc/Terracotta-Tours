@@ -22,11 +22,44 @@ body, html{
     background-color: var(--background);
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-color1: #F7B180;
+    --primary-color2: #18471B;
+    --secondary-color1: #FFFFFF;
+    --secondary-color2: #000000;
+    --blue: #3b07e9;
+}
+
+.grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 1000px 600px 440px 620px 1200px 340px 425px;
+}
+
 header{
     display: flex;
-    background-color: blue;
     align-items: center;
     justify-content: space-around;
+    height: 55px;
+}
+
+header h3{
+    font-weight: 200;
+    font-size: 28px;
+    color: var(--secondary-color2);
+    padding-left: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--primary-color2);
+    padding: 10px;
+    margin-right: 10px;
 }
 
 .logo-container{
@@ -39,12 +72,125 @@ header img{
     width: 30px;
 }
 
+.btn-1{
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    color: var(--primary-color2);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--primary-color2);
+    background-color: var(--secondary-color1);
+    cursor: pointer;
+}
+
+.btn-2{
+    font-size: 15px;
+    background: #18471B;
+    border-radius: 6px;
+    height: 40px;
+    width: 130px;
+    border: none;
+    color: var(--secondary-color1);
+    cursor: pointer;
+}
+
 .banner{
     background-image: url(assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.banner-heading{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sacramento', cursive;
+}*/
+
+.banner h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 80px;
+    color: var(--primary-color1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Sacramento', cursive;
+}
+
+.banner button{
+    font-weight: 500;
+    font-size: 20px;
+    background: #18471B;
+    border-radius: 6px;
+    height: 52px;
+    width: 192px;
+    border: none;
+    color: var(--secondary-color1);
+    cursor: pointer;
+}
+
+main{
+    padding-left: 200px;
+    padding-top: 70px;
+}
+
+main h2{
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 72px;
+    padding-bottom: 20px;
+}
+
+main h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 15px;
+}
+
+main p{
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 15px 15px 15px 0;
+}
+
+main button {
+    margin-top: 45px;
+    margin-bottom: 100px;
 }
 
 .awards-container{
     display: flex;
+
+    justify-content: space-around;
+    align-content: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.img-style-1{
+    width: 300px;
+    height: 278px;
+}
+
+.img-style-2{
+    width: 282px;
+    height: 278px;
+}
+
+.img-style-3 {
+    width: 700px;
+    height: 300px;
+}
+=======
 }
 
 .popular-trips{
@@ -185,5 +331,4 @@ footer{
     font-size: 16px;
     color: var(--text-secondary);
   }
-
 
