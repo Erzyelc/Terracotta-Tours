@@ -16,9 +16,10 @@
 }
 /* gurcan */
 body, html{
-    font-family: 'Permanent', 'Marker';
+    font-family: 'Permanent', 'Poppins';
     height: 100%;
     width: 100%;
+    background-color: var(--background);
 }
 
 header{
@@ -46,21 +47,120 @@ header img{
     display: flex;
 }
 
+.popular-trips{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pt1{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--accent-green);
+    text-align: center;
+    margin: 10px;
+
+}
+
+.pt2{
+    font-family: 'Poppins';
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+    color: var(--text-primary);
+
+}
+
+.pt3{
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    color: var(--text-secondary);
+
+}
+
 .card-container{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+
+
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 380px;
-    border: 1px solid black;
+    justify-content: space-around;
+    width: 373px;
+    height: 428px;
+    
+}
+
+.card-text{
+    height: 188px;
+    width: 373px;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 16px;
+}
+
+.card h3{
+    color: var(--text-primary);
+    margin: 10px;
+    font-size: 24px;
+}
+
+.card p{
+    color: var(--text-secondary);
+    font-size: 16px;
 }
 
 .card img{
     width: 100%;
+}
+
+.ready-container{
+    height: 200px;
+    background-color: var(--background-dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 40px;
+}
+
+
+.ready-btn1{
+    height: 40px;
+    background-color: var(--background-dark);
+    width: 130px;
+    border-radius: 6px;
+    color: var(--text-reversed);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--accent-green);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ready-btn2{
+    font-size: 15px;
+    background: var(--accent-green);
+    border-radius: 6px;
+    height: 40px;
+    width: 130px;
+    border: none;
+    color: var(--text-reversed);
+    cursor: pointer;
 }
 
 .footer-logo{
@@ -81,6 +181,9 @@ footer{
     align-items: center;
     height: 200px;
     background-color: var(--background-footer);
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: var(--text-secondary);
   }
 
 
